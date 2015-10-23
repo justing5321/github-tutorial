@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GitHub Tutorial by justing5321</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/justing5321/github-tutorial">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/justing5321/github-tutorial/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/justing5321/github-tutorial/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>GitHub Tutorial</h1>
+          <p>Git it yet?</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/justing5321">justing5321</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Justin Garcia</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. Github</h2>
+
+<ul>
+<li>Git<br>
+
+<ul>
+<li>Version control: Git keeps your lastest bits of code or snapshots to refer back to later<br>
+</li>
+<li>*Note: GIT DOES NOT REQUIRE GITHUB!</li>
+</ul>
+</li>
+<li>Github
+
+<ul>
+<li>space where all your code is saved</li>
+<li>Saves for work to the "Cloud"</li>
+<li>Easily lets multiple people work on files</li>
+<li>*Note: REQUIRES GIT!</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h2>
+<a id="1-first-go-to-githubcom" class="anchor" href="#1-first-go-to-githubcom" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. First go to <a href="https://github.com">github.com</a>
+</h2>
+
+<p>2.Once you're there you should use your HSTAT user email/password to sign up.<br>
+  3.Now that you're signed up you should look at the icon on the top right corner, click on the icon and direct yourself to settings.<br>
+  4.You should see on your screen a column called <em>Personal settings</em>, scroll down until you get to ssh keys, click, and wait for instructions.<br>
+  5.Click on the top right, <em>Add SSH key</em>, and you should add an appropriate title and copy your ssh key from your *IDE  </p>
+
+<ol>
+<li>Type ssh -T <a href="mailto:git@github.com">git@github.com</a> (then type yes)</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository setup</h2>
+
+<h3>
+<a id="creating-a-repository" class="anchor" href="#creating-a-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a repository:</h3>
+
+<ul>
+<li>Go to your command line on the bottom of the screen and you should make a new repository(Make an appropriate title)<br>
+</li>
+<li>To do that you will type mkdir(making your directory), space, (whatever your repo is named) and then press enter.<br>
+</li>
+<li>Then you should type cd (whatever your file is called) because you want to be in that file so you can keep all of your work in one place.<br>
+</li>
+<li> Now you should do a one time setup which gets saved in order to know who did this beautiful work.
+
+<ul>
+<li>type git <code>init</code>, enter, then <code>git config  --global user.name "first name"</code>,enter, then <code>git config --global user.email "hstat email"</code>
+</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>Now lets go into your directory if you are already not in there.<br>
+<code>cd</code> (whatever the name of your directory)<br>
+To save your work press command+s<br>
+now that your work is saved, type <code>git add</code> (the name of your directory).<br>
+If you want to check your added files use <code>git status</code> which lets you know the file is ready to be committed.<br>
+Once you see your saved work then you want to type git comit -m "message describing what you did to the file).<br>
+If you are wondering what the -m is, it is just reminding you to make a message.<br>
+Go to github.com and go go to the top right and click new repository.<br>
+CREATE REPOSITORY!!(If you are asked to verify your emial...JUST DO IT!!)<br>
+oh snap, you have to now push your work up to github! Make sure you have ssh selected and you should type <code>git remote add origin git@github.com:bmuellerhstat/(name or your repo), press enter.</code>
+Then type <code>git push -u origin master</code>. You are down!! Refresh the page to see your repo!</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
